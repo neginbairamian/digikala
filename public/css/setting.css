@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: iranykan;
+}
+.weaper{
+    width: 100%;
+}
+@font-face {
+    font-family: iranykan;
+    src: url(../font/IRANYekanWeb-Medium.eot);
+    src: url(../font/IRANYekanWeb-Medium.ttf);
+    src: url(../font/IRANYekanWeb-Medium.woff);
+    src: url(../font/IRANYekanWeb-Medium.woff2);
+}
+:root{
+    --bg-gry:#f0f0f1;
+    --bg-gunmetal-gray:#81858b;
+    --wind-chime:#e0e0e2;
+    --gray-web:#62666d;
+    --genie:#3f4064;
+}
+.line{
+    width: 1px;
+    height: 24px;
+    display: block;
+    background-color: var(--wind-chime);
+}
+.line2{
+    width: 1px;
+    height: 145px;
+    display: block;
+    background-color: var(--wind-chime);
+}
+.line3{
+    width: 1px;
+    height: 217px;
+    display: block;
+    background-color: var(--wind-chime);
+}
+.line4{
+    width: 70px;
+    height: 2px;
+    display: block;
+    background-color: #ef394e;
+   
+}
