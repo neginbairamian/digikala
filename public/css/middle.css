@@ -114,8 +114,20 @@ section{
             position: absolute;
             top: 90%;
             left: 93%;
+            &::after{
+                font-size: 15px;
+                font-weight: 700;
+            }
             &:hover{
                 color: #424750;
+            }
+            &.swiper-button-disabled{
+                transition: 300ms;
+                -webkit-transition: 300ms;
+                -moz-transition: 300ms;
+                -ms-transition: 300ms;
+                -o-transition: 300ms;
+                opacity: 0;
             }
         }
         .autoplay-progress {
@@ -212,6 +224,7 @@ section{
         -o-border-radius: 25px;
         margin: auto;
     }
+    /* shegeftangiz tablighat start*/
     .middel5{
         width: 85%;
         height: 110px;
@@ -248,22 +261,33 @@ section{
                 margin: auto;
             }
         }
-        .chap{
-            width: 639px;
+        .sh-left{
+            width: 640px;
             height: 74px;
-            background-image: url(../images/freshPattern.svg);
-            .logoo-child{
-                width: 639px;
+            margin-left: 20px;
+            display: flex;
+            flex-flow: row wrap;
+            align-items: center;
+            margin-top: 20px;
+            gap: 5px;
+            .images{
+                width: 74px;
                 height: 74px;
-                display: flex;
-                flex-flow: row wrap;
-                align-items: center;
-                justify-content: center;
-                margin: 20px auto;
-                gap: 10px;
+                border-radius: 50%;
+                -webkit-border-radius: 50%;
+                -moz-border-radius: 50%;
+                -ms-border-radius: 50%;
+                -o-border-radius: 50%;
+                background-color: white;
+            
+                position: relative;
                 & img{
-                    width: 60px;
-                    height: 60px;
+                    width: 58px;
+                    height: 58px;
+                    line-height: 58px;
+                    margin: 5px auto;
+                    margin-right: 5px;
+                    object-fit: cover;
                     border-radius: 50%;
                     -webkit-border-radius: 50%;
                     -moz-border-radius: 50%;
@@ -271,24 +295,54 @@ section{
                     -o-border-radius: 50%;
                 }
                 & a{
-                    display: block;
+                    display: flex;
+                    justify-content: center;
                     text-decoration: none;
-                    color: green;
-                    width: 150px;
-                    height: 50px;
-                    background-color: white;
+                    color: white;
+                    width: 30px;
+                    height: 20px;
+                    background-color: #d32f2f;
                     text-align: center;
-                    line-height: 50px;
+                    line-height: 20px;
                     border-radius: 20px;
-                    -webkit-border-radius: 20px;
-                    -moz-border-radius: 20px;
-                    -ms-border-radius: 20px;
-                    -o-border-radius: 20px;
-                    font-size: 13px;
+                    -webkit-border-radius:;
+                    -moz-border-radius:;
+                    -ms-border-radius:;
+                    -o-border-radius:;
+                    font-size: 12px;
+                    font-weight: 500;
+                    position: absolute;
+                    right: 0;
+                    bottom: 0;
                 }
+            }
+            & a{
+                display: flex;
+                flex-flow: row wrap;
+                justify-content: center;
+                align-items: center;
+                text-decoration: none;
+                color: #029a49;
+                fill: #029a49;
+                width: 148px;
+                height: 50px;
+                background-color: #fff;
+                line-height: 50px;
+                border-radius: 40px;
+                -webkit-border-radius: 40px;
+                -moz-border-radius: 40px;
+                -ms-border-radius: 40px;
+                -o-border-radius: 40px;
+                font-size: 13px;
+                margin: 5px auto;
+                font-weight: 500;
+                gap: 8px;
+                
             }
         }
     }
+    /* shegeftangiz tablighat end */
+     /* midedel6 tablig mahsolat start */
     .middel6{
         width: 100%;
         height: 240px;
@@ -309,6 +363,8 @@ section{
 }
         }
     }
+     /* midedel6 tablig mahsolat end  */
+     /* middel7 kharid bar asas dastebandi start */
     .middel7{
         width: 100%;
         height: 456px;
@@ -386,6 +442,8 @@ section{
             }
         }
     }
+     /* middel7 kharid bar asas dastebandi end */
+     /* mahsolat takfifi start */
     .middel8{
         width: 100%;
         height: 264px;
@@ -407,6 +465,8 @@ section{
             }
         }
     }
+    /* mahsolat takfifi end */
+    /* middel9 brand mahbob start */
     .middel9{
         width: 100%;
         height: 223px;
@@ -499,6 +559,8 @@ section{
             }
         }
     }
+    /* middel9 brand mahbob end */
+    /* mahsolat takfifi start */
     .middel10{
         width: 100%;
         height: 280px;
@@ -521,6 +583,8 @@ section{
 }
         }
     }
+    /* mahsolat takfifi end */
+     /* middel11 dastebandi bar asas salighe end  */
     .middel11{
         width: 100%;
         height: 420px;
@@ -807,6 +871,8 @@ section{
 
         }
     }
+     /* middel11 dastebandi bar asas salighe end  */
+    /* digiclub start */
     .middel12{
         width: 100%;
         height: 87px;
@@ -915,6 +981,8 @@ section{
             }
         }
     }
+    /* digiclub end */
+     /* middel13 porfroshtarin kala start  */
     .middel13{
         width: 100%;
         height: 403px;
@@ -1039,7 +1107,9 @@ section{
         }
     }
 }
-}
+    }
+     /* middel13 porfroshtarin kala end  */
+     /* middel14 dastebandi bar asas salighe start  */
     .middel14{
     width: 100%;
     height: 420px;
@@ -1326,6 +1396,8 @@ section{
 
     }
     }
+     /* middel14 dastebandi bar asas salighe end  */
+    /* middel15 baner tablighati start  */
     .middel15{
     width: 100%;
     height: 167px;
@@ -1343,6 +1415,8 @@ section{
         cursor: pointer;
     }
     }
+    /* middel15 baner tablighati end  */
+    /* mahsolat takhfifi , haraj start */
     .middel16{
     width: 100%;
     height: 812px;
@@ -1445,6 +1519,8 @@ section{
         }
     }
     }
+    /* mahsolat takhfifi , haraj end */
+     /* daghtarin , porfroshtarin mahso akhir start */
     .middel17{
     width: 100%;
     height: 403px;
@@ -1574,6 +1650,8 @@ section{
 }}
 }
     }
+    /* daghtarin , porfroshtarin mahso akhir end */
+     /* khandaniha start */
     .middel18{
     width: 100%;
     height: 345px;
@@ -1654,6 +1732,9 @@ section{
 
 
     }
+     /* khandaniha start */
+    /* alamat sabet start */
+    /* alamat hedfon start */
     .hedfon{
         width: 50px;
         height: 50px;
@@ -1671,6 +1752,8 @@ section{
         fill: #fff;
         cursor: pointer;
     }
+    /* alamat hedfon end */
+    /* alamat sopermarket start */
     .supermarket{
          width:129px ;
          height:52px ;
@@ -1696,6 +1779,9 @@ section{
          }
          
 }
+    /* alamat sopermarket end */
+    /* alamat sabet end */
+
 }
 
      
