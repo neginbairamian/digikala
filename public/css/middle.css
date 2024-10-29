@@ -1,9 +1,11 @@
 section{
     width: 100%;
+    /* slider 1 for estoris start */
     .middel{
         width: 87%;
         height: 150px;
-        margin:15px auto;
+        margin:0 auto;
+        margin-top: 10px;
         .swiper {
             width: 100%;
             height: 100%;
@@ -16,8 +18,8 @@ section{
                 & figure{
                     cursor: pointer;
                     & img{
-                        width: 80PX;
-                        height: 80PX;
+                        width: 84PX;
+                        height: 84PX;
                         display: block;
                         border: 2PX solid blueviolet;
                         object-fit: cover;
@@ -30,9 +32,11 @@ section{
                     }
                     & figcaption{
                         width: 84px;
-                        height: 40px;
-                        font-size: 10px;
-                        margin: 15px auto;
+                        height: 35px;
+                        font-size: 11px;
+                        margin: 0 auto;
+                        margin-top: 10px;
+                        color: #23254e;
                     }
                     @media (max-width: 760px) {
                         .swiper-button-next {
@@ -64,15 +68,17 @@ section{
             overflow: hidden;
             color: var(--wind-chime);
             border: 3px solid white;
+            border: 1px solid var(--wind-chime);
             &:hover{
-                color: black;
+                color: #424750;
             }
         }
     }
+    /* slider 1 for estoris end */
+    /* slider2 start */
     .middel2{
         width: 100%;
         height: 400px;
-        background-color: deeppink;
         .swiper-wrapper {
             width: 100%;
             height: 400px;
@@ -89,6 +95,27 @@ section{
                     height: 100%;
                     object-fit: cover;
                 }
+            }
+        }        
+        .swiper-button-next , .swiper-button-prev{
+            width: 40PX;
+            height: 40PX;
+            background-color: white;
+            line-height: 50PX;
+            border-radius: 50%;
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            -ms-border-radius: 50%;
+            -o-border-radius: 50%;
+            overflow: hidden;
+            color: var(--wind-chime);
+            border: 3px solid white;
+            border: 1px solid var(--wind-chime);
+            position: absolute;
+            top: 90%;
+            left: 93%;
+            &:hover{
+                color: #424750;
             }
         }
         .autoplay-progress {
@@ -122,8 +149,10 @@ section{
             -moz-transform: rotate(-90deg);
             -ms-transform: rotate(-90deg);
             -o-transform: rotate(-90deg);
-}
+            }
     }
+     /* slider2 end */
+     /* mahsolat mojod start */
     .middel3{
         width: 87%;
         height: 140px;
@@ -171,6 +200,7 @@ section{
         }
         
     }
+    /* mahsolat mojod end */
     .middel4{
         width: 85%;
         height: 300px;
