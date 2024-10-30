@@ -1,3 +1,4 @@
+    /* header start */
 header{
     width: 100%;
     background-color: white;
@@ -198,8 +199,11 @@ header{
         }
     }
 }
+   /* header end */
+   /* middel start */
 section{
     width: 100%;
+    /* swiper baray pishnahad shegeftangiz start */
     .middel1{
         width: 100%;
         height: 464px;
@@ -217,6 +221,7 @@ section{
             .swiper {
                 width: 100%;
                 height: 100%;
+                cursor: pointer;
                 .swiper-slide {
                     text-align: center;
                     font-size: 18px;
@@ -229,10 +234,7 @@ section{
                         width: 100%;
                         height: 400px;
                         object-fit: cover;
-                       
-}
-          
-            
+                       }
               }
               .autoplay-progress{
                     --progress: 0;
@@ -267,12 +269,30 @@ section{
                 overflow: hidden;
                 color: var(--wind-chime);
                 border: 3px solid white;
+                border: 1px solid var(--wind-chime);
+                position: absolute;
+                top: 90%;
+                left: 93%;
+                &::after{
+                    font-size: 15px;
+                    font-weight: 700;
+                }
                 &:hover{
-                    color: black;
+                    color: #424750;
+                }
+                &.swiper-button-disabled{
+                    transition: 300ms;
+                    -webkit-transition: 300ms;
+                    -moz-transition: 300ms;
+                    -ms-transition: 300ms;
+                    -o-transition: 300ms;
+                    opacity: 0;
                 }
             }
         }
     }
+    /* swiper baray pishnahad shegeftangiz end */
+    /* swiper baray pishnahad roz start */
     .middel2-2{
         width: 100%;
         height: 360px;
@@ -452,6 +472,15 @@ section{
                                         line-height: 26px;
                                         font-weight: 400;
                                     }
+                                    & h5{
+                                        width: 370px;
+                                        height: 30px;
+                                        color: #d32f2f;
+                                        font-size: 12px;
+                                        direction: ltr;
+                                        margin-top: 40px;
+        
+                                    }
                                 }
                             }
                         }
@@ -480,15 +509,29 @@ section{
                     -o-border-radius: 50%;
                     overflow: hidden;
                     color: var(--wind-chime);
-                    border: 3px solid white;
+                    border: 2px solid var(--bg-gry);
+                    &::after{
+                        font-size: 15px;
+                        font-weight: 700;
+                    }
                     &:hover{
                         color: black;
+                    }
+                    &.swiper-button-disabled{
+                        transition: 300ms;
+                        -webkit-transition: 300ms;
+                        -moz-transition: 300ms;
+                        -ms-transition: 300ms;
+                        -o-transition: 300ms;
+                        opacity: 0;
                     }
                 }
             
                 }
             }
     }
+    /* swiper baray pishnahad roz end */
+    /* swiper baray dastebandiha start */
     .middel2-3{
         width: 100%;
         height: 206px;
@@ -514,6 +557,7 @@ section{
                         font-size: 12px;
                         justify-content: center;
                         align-items: center;
+                        cursor: pointer;
                         .h-destebandiha{
                             width: 122px;
                             height: 166px;
@@ -586,14 +630,28 @@ section{
                     -o-border-radius: 50%;
                     overflow: hidden;
                     color: var(--wind-chime);
-                    border: 3px solid white;
+                    border: 2px solid var(--bg-gry);
+                    &::after{
+                        font-size: 15px;
+                        font-weight: 700;
+                    }
                     &:hover{
                         color: black;
+                    }
+                    &.swiper-button-disabled{
+                        transition: 300ms;
+                        -webkit-transition: 300ms;
+                        -moz-transition: 300ms;
+                        -ms-transition: 300ms;
+                        -o-transition: 300ms;
+                        opacity: 0;
                     }
                 }
 
             }
-        } 
+    } 
+    /* swiper baray dastebandiha end */
+    /* swiper baray shegeftangiz montakhab start */
     .middel2-4{
         width: 100%;
         height: 441px;
@@ -728,6 +786,15 @@ section{
                                 line-height: 26px;
                                 font-weight: 400;
                             }
+                            & h5{
+                                width: 176px;
+                                height: 30px;
+                                color: #d32f2f;
+                                font-size: 12px;
+                                direction: ltr;
+                                margin-top: 20px;
+
+                            }
                         }
                     }
                 }
@@ -754,14 +821,27 @@ section{
                 -o-border-radius: 50%;
                 overflow: hidden;
                 color: var(--wind-chime);
-                border: 3px solid white;
+                border: 2px solid var(--bg-gry);
+                &::after{
+                    font-size: 15px;
+                    font-weight: 700;
+                }
                 &:hover{
                     color: black;
                 }
+                &.swiper-button-disabled{
+                    transition: 300ms;
+                    -webkit-transition: 300ms;
+                    -moz-transition: 300ms;
+                    -ms-transition: 300ms;
+                    -o-transition: 300ms;
+                    opacity: 0;
                 }
             }
-        }
+        }}
     }
+    /* swiper baray shegeftangiz montakhab end */
+    /* swiper baray shegeftangiz robe etmam start */
     .middel2-5{
         width: 100%;
         height: 462px;
@@ -806,6 +886,7 @@ section{
                         display: flex;
                         justify-content: center;
                         align-items: center;
+                        cursor: pointer;
                         .full5{
                             width: 175px;
                             height: 361px;
@@ -899,6 +980,15 @@ section{
                                 line-height: 26px;
                                 font-weight: 400;
                             }
+                            & h5{
+                                display: flex;
+                                width: 176px;
+                                height: 30px;
+                                color: #d32f2f;
+                                font-size: 12px;
+                                direction: ltr;
+                                margin-top: 20px;
+                            }
                         }
                     }
                 }
@@ -925,14 +1015,28 @@ section{
                     -o-border-radius: 50%;
                     overflow: hidden;
                     color: var(--wind-chime);
-                    border: 3px solid white;
+                    border: 2px solid var(--bg-gry);
+                    &::after{
+                        font-size: 15px;
+                        font-weight: 700;
+                    }
                     &:hover{
                         color: black;
+                    }
+                    &.swiper-button-disabled{
+                        transition: 300ms;
+                        -webkit-transition: 300ms;
+                        -moz-transition: 300ms;
+                        -ms-transition: 300ms;
+                        -o-transition: 300ms;
+                        opacity: 0;
                     }
                 }
             }
         }
     }
+    /* swiper baray shegeftangiz robe etmam end */
+    /* titel shegeftangiz start */
     .middel2-6{
         width:100%;
         height: 110px;
@@ -951,6 +1055,7 @@ section{
             justify-content: space-between;
             align-items: center;
             flex-flow: row wrap;
+            cursor: pointer;
             .sh-right{
                 width: 465px;
                 height: 62px;
@@ -1060,6 +1165,8 @@ section{
             }
         }
     }
+    /* titel shegeftangiz end */
+    /* titel shegeftangiz2 start */
     .middel2-7{
         width: 100%;
         height: 110px;
@@ -1078,6 +1185,7 @@ section{
             justify-content: space-between;
             align-items: center;
             flex-flow: row wrap;
+            cursor: pointer;
             .dastresi-right{
                 width: 461px;
                 height: 83px;
@@ -1168,6 +1276,8 @@ section{
             }
 }
     }
+    /* titel shegeftangiz2 end */
+    /* swiper baray shegeftangiz sefareshi start */
     .middel2-8{
         width: 100%;
         height: 460px;
@@ -1213,6 +1323,7 @@ section{
                         display: flex;
                         justify-content: center;
                         align-items: center;
+                        cursor: pointer;
                         .full8{
                             width: 175px;
                             height: 361px;
@@ -1344,14 +1455,28 @@ section{
                     -o-border-radius: 50%;
                     overflow: hidden;
                     color: var(--wind-chime);
-                    border: 3px solid white;
+                    border: 2px solid var(--bg-gry);
+                    &::after{
+                        font-size: 15px;
+                        font-weight: 700;
+                    }
                     &:hover{
                         color: black;
+                    }
+                    &.swiper-button-disabled{
+                        transition: 300ms;
+                        -webkit-transition: 300ms;
+                        -moz-transition: 300ms;
+                        -ms-transition: 300ms;
+                        -o-transition: 300ms;
+                        opacity: 0;
                     }
                 }
             }
         }
     }
+    /* swiper baray shegeftangiz sefareshi end */
+    /* filterha start */
     .middel2-9{
         width: 98%;
         margin-top: 20px;
@@ -1363,7 +1488,6 @@ section{
         .top9{
             width: 100%;
             height: 57px;
-            background-color: #c0c2c5;
             margin: 0 auto;
             & p{
                 width: 100%;
@@ -1410,6 +1534,8 @@ section{
                     .botton-right9{
                         width: 268px;
                         height: 58px;
+                        cursor: pointer;
+                        
                         .filterha1{
                             width: 228px;
                             height: 68px ;
@@ -1490,14 +1616,92 @@ section{
         }
         .left-middel9{
             width: 1206px;
-            background-color: #649ef6;
             display: flex;
             flex-flow: row wrap;
-        
             .top-left{
                 width: 100%;
                 height: 50px;
-                background-color: #007aff;
+                display: flex;
+                flex-flow: row wrap;
+                justify-content: space-between;
+                .menu{
+                    width: 70%;
+                    height: 100%;
+                    padding: 0px 15px;
+                    & nav{
+                        width: 100%;
+                        height: 100%;
+                        .menuitems{
+                            width: 100%;
+                            height: 100%;
+                            display: flex;
+                            flex-flow: row wrap;
+                            justify-content: flex-start;
+                            align-items: center;
+                            list-style: none;
+                            gap: 20px;
+                            .menuitem{
+                                height: 100%;
+                                display: flex;
+                                align-items: center;
+                                font-size: 14px;
+                                color: var(--genie);
+                                fill: var(--genie);
+                                & a{
+                                    height: 100%;
+                                    display: flex;
+                                    align-items: center;
+                                    text-decoration: none;
+                                    font-size: 12px;
+                                    color: var(--gray-web);
+                                    cursor: pointer;
+                                }
+                                .submenu{
+                                    width: 80%;
+                                    height: 500px;
+                                    background-color: grey;
+                                    position: absolute;
+                                    top: 170px;
+                                    z-index: 99999999999999999999;
+                                    display: none;
+                                    .mysubmenu{
+                                        width: 18%;
+                                        height: 100%;
+                                        background-color: crimson;
+                                        list-style: none;
+                                        .mysubmenus{
+                                            width: 100%;
+                                            height: 50px;
+                                            background-color: gold;
+                                            line-height: 50px;
+                                            padding-right: 20px;
+                                            cursor: pointer;
+                
+                                        }
+                                    }
+                                }
+                                &:hover{
+                                    .submenu{
+                                        display: block;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                  
+                }
+                .left-kala{
+                    width: 100px;
+                    height: 50px;
+                    & p{
+                        color: var(--gray-web);
+                        text-align: left;
+                        line-height: 50px;
+                        font-size: 13px;
+                        padding-left: 5px;
+                        
+                    }
+                }
             }
             .pishnahadha9{
                 width: 301px;
@@ -1509,6 +1713,7 @@ section{
                 flex-flow: row wrap;
                 justify-content: center;
                 align-items: center;
+                cursor: pointer;
                 .pishnahad9{
                     width: 284px;
                     height: 486px;
@@ -1651,8 +1856,11 @@ section{
         }
      
     }
-    
+    /* filterha end */
 }
+
+   /* middel end */
+
 
 
 
