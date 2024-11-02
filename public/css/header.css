@@ -143,7 +143,8 @@ header{
                         font-size: 14px;
                         color: var(--genie);
                         fill: var(--genie);
-                        background-color: aqua;
+                        background-color: white !important;
+
                         & a{
                             height: 100%;
                             display: flex;
@@ -155,30 +156,120 @@ header{
                         .submenu{
                             width: 80%;
                             height: 500px;
-                            background-color: grey;
                             position: absolute;
                             top: 170px;
                             z-index: 99999999999999999999;
-                            display: none;
+                            opacity: 0;
+                            background-color: white !important;
                             .mysubmenu{
                                 width: 18%;
                                 height: 100%;
-                                background-color: crimson;
                                 list-style: none;
+                                overflow-y: scroll;
+                                display: flex;
+                                flex-flow: row wrap;
+                                line-height: 50px;
                                 .mysubmenus{
                                     width: 100%;
                                     height: 50px;
-                                    background-color: gold;
                                     line-height: 50px;
                                     padding-right: 20px;
                                     cursor: pointer;
-        
+                                    background: #f0f0f1 !important;
+                                    display: inline-block;
+                                    display: flex;
+                                    flex-flow: row wrap;
+                                    align-items: center;
+                                    gap: 5px;
+                                    font-size: 12px;
+                                    font-weight: 500;
+                                    &:hover{
+                                        background-color: white !important;
+                                        color: red;
+                                        fill: red;
+                                        .mene-left{
+                                            display: flex;
+                                            .child-meno-left{
+                                                display: block;
+                                            }
+                                        }
+                                        
+                                    }
+                                    .mene-left{
+                                        width: calc(100% - 18%);
+                                        height: 100%;
+                                        border: 1px solid var(--wind-chime);
+                                        position: absolute;
+                                        left: 0;
+                                        top: 0;
+                                        display: flex;
+                                        flex-flow: row wrap;
+                                        gap: 5px;
+                                        display: none;
+                                        overflow-y: scroll;
+                                        .titel{
+                                            width: 100%;
+                                            height: 40px;
+                                            background-color: white;
+                                            margin-right: 20px;
+                                            & p{
+                                                color: #19bfd3;
+                                                display: flex;
+                                                line-height: 40px;
+                                                align-items: center;
+                                                fill: #19bfd3;
+                                            }                                            
+
+                                        }
+                                        .child-meno-left{
+                                            width: 234px;
+                                            display: flex !important;
+                                            flex-flow: row wrap !important;
+                                            &:hover{
+                                                background-color: white;
+                                            }
+                                            .titel1{
+                                                width: 100%;
+                                                height: 50px;
+                                                & p{
+                                                    font-weight: 500;
+                                                    color: black;
+                                                    margin-right: 20px;
+                                                    display: flex;
+                                                    align-items: center;
+                                                    fill: black;
+                                                    font-size: 15px;
+                                                    &:hover{
+                                                        color: red;
+                                                        fill: red;
+                                                    }
+
+                                                }
+                                            }
+                                            & ul{
+                                                & li{
+                                                    list-style: none;
+                                                    margin-right: 20px;
+                                                    font-size: 12px;
+                                                    color: #81858b;
+                                                    &:hover{
+                                                        color: red;
+                                                    }
+                                                    
+                                                }
+                                            }
+
+                                        }
+
+
+                                    }
+                                   
                                 }
                             }
                         }
                         &:hover{
                             .submenu{
-                                display: block;
+                                opacity: 1;
                             }
                         }
                     }

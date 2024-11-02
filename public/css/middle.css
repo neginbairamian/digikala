@@ -67,10 +67,21 @@ section{
             -o-border-radius: 50%;
             overflow: hidden;
             color: var(--wind-chime);
-            border: 3px solid white;
-            border: 1px solid var(--wind-chime);
+            border: 2px solid var(--bg-gry);
+            &::after{
+                font-size: 15px;
+                font-weight: 700;
+            }
             &:hover{
-                color: #424750;
+                color: black;
+            }
+            &.swiper-button-disabled{
+                transition: 300ms;
+                -webkit-transition: 300ms;
+                -moz-transition: 300ms;
+                -ms-transition: 300ms;
+                -o-transition: 300ms;
+                opacity: 0;
             }
         }
     }
@@ -89,6 +100,7 @@ section{
                 display: flex;
                 justify-content: center;
                 align-items: center;
+                cursor: pointer;
                 & img {
                     display: block;
                     width: 100%;
@@ -223,6 +235,167 @@ section{
         -ms-border-radius: 25px;
         -o-border-radius: 25px;
         margin: auto;
+        .slider4{
+            width: 100%;
+            height: 300px;
+            margin: auto;
+            .swiper {
+                width: 100%;
+                height: 100%;
+                .swiper-wrapper{
+                    gap: 5px;
+                    display: flex;
+                    align-items: center;
+                    .swiper-slide {
+                        width: 160px !important;
+                        height: 250px !important;
+                        text-align: center;
+                        font-size: 18px;
+                        background: #fff;
+                        display: flex;
+                        justify-content: center;
+                        flex-flow: row wrap;
+                        align-items: center;
+                        background-color: white;
+                        cursor: pointer;
+                        .pishnahadi{
+                            width: 100%;
+                            height: 100%;
+                            background-color: crimson;
+                            overflow: hidden;
+                            & a{
+                                text-decoration: none;
+                                font-size: 12px;
+                                color: white;
+                                fill: white;
+                                font-weight: 600;
+                                display: flex;
+                                justify-content: center;
+                            }
+                            
+                        }
+                        .full{
+                            width:144px ;
+                            height: 238px;
+                            margin: 0px auto;
+                            .images-4{
+                                width: 132px;
+                                height: 132px;
+                                & img{
+                                    width: 132px;
+                                    height: 132px;
+                                    object-fit: cover;
+                                    margin: 0 auto;
+                                }
+                            }
+                            & p{
+                                width: 144px;
+                                height: 40px;
+                                color: #3f4064;
+                                font-size: 10px;
+                                
+                            }
+                            & h2{
+                                width: 144px;
+                                height: 30px;
+                                display: flex;
+                                flex-flow: row wrap;
+                                justify-content: space-between;
+                                margin-top: 5px;
+                                .h2-right4{
+                                    width: 34px;
+                                    height: 30px;
+                                    display: flex;
+                                    & a{
+                                        display: block;
+                                        text-decoration: none;
+                                        color: white;
+                                        width: 34px;
+                                        height: 20px;
+                                        background-color: #d32f2f;
+                                        text-align: center;
+                                        line-height: 20px;
+                                        border-radius: 20px;
+                                        -webkit-border-radius: 20px;
+                                        -moz-border-radius: 20px;
+                                        -ms-border-radius: 20px;
+                                        -o-border-radius: 20px;
+                                        font-size: 12px;
+                                        margin: 5px auto;
+                                        font-weight: 400;
+                                    }
+                                }
+                                .h2-left4{
+                                    width: 70px;
+                                    height: 33px;
+                                    display: flex;
+                                    font-size: 12px;
+                                    line-height: 30px;
+                                    align-items: center;
+                                    gap: 5px;
+                                }
+                            }
+                            & h3{
+                                display: block;
+                                width: 144px;
+                                height: 21px;
+                                direction: ltr;
+                                color: #c0c2c5;
+                                font-size: 11px;
+                                line-height: 26px;
+                                font-weight: 400;
+                                margin-right: 2px;
+                            }
+
+                        }
+                        
+
+                      }
+                }
+                @media (max-width: 760px) {
+                    .swiper-button-next {
+                      right: 20px;
+                      transform: rotate(90deg);
+                    }
+              
+                    .swiper-button-prev {
+                      left: 20px;
+                      transform: rotate(90deg);
+                    }
+                  }
+                  .swiper-button-next , .swiper-button-prev{
+                    width: 40PX;
+                    height: 40PX;
+                    background-color: white;
+                    line-height: 50PX;
+                    border-radius: 50%;
+                    -webkit-border-radius: 50%;
+                    -moz-border-radius: 50%;
+                    -ms-border-radius: 50%;
+                    -o-border-radius: 50%;
+                    overflow: hidden;
+                    color: var(--wind-chime);
+                    border: 2px solid var(--bg-gry);
+                    &::after{
+                        font-size: 15px;
+                        font-weight: 700;
+                    }
+                    &:hover{
+                        color: black;
+                    }
+                    &.swiper-button-disabled{
+                        transition: 300ms;
+                        -webkit-transition: 300ms;
+                        -moz-transition: 300ms;
+                        -ms-transition: 300ms;
+                        -o-transition: 300ms;
+                        opacity: 0;
+                    }
+                }
+              }
+              
+            
+        }
     }
     /* shegeftangiz tablighat start*/
     .middel5{
@@ -237,6 +410,7 @@ section{
         display: flex;
         justify-content: space-between;
         background-color: var(--bg-gry);
+        cursor: pointer;
         .rast{
             width: 45%;
             height: 100%;
@@ -510,6 +684,7 @@ section{
                             justify-content: center;
                             align-items: center;
                             border-left: 1px solid var(--bg-gry);
+                            cursor: pointer;
                             & img{
                                 width: 110px;
                                 height: 110px;
@@ -539,22 +714,33 @@ section{
                     }
                 }
                 .swiper-button-next , .swiper-button-prev{
-                        width: 40PX;
-                        height: 40PX;
-                        background-color: white;
-                        line-height: 50PX;
-                        border-radius: 50%;
-                        -webkit-border-radius: 50%;
-                        -moz-border-radius: 50%;
-                        -ms-border-radius: 50%;
-                        -o-border-radius: 50%;
-                        overflow: hidden;
-                        color: var(--wind-chime);
-                        border: 3px solid white;
-                        &:hover{
-                            color: black;
-                        }
-                        
+                    width: 40PX;
+                    height: 40PX;
+                    background-color: white;
+                    line-height: 50PX;
+                    border-radius: 50%;
+                    -webkit-border-radius: 50%;
+                    -moz-border-radius: 50%;
+                    -ms-border-radius: 50%;
+                    -o-border-radius: 50%;
+                    overflow: hidden;
+                    color: var(--wind-chime);
+                    border: 2px solid var(--bg-gry);
+                    &::after{
+                        font-size: 15px;
+                        font-weight: 700;
+                    }
+                    &:hover{
+                        color: black;
+                    }
+                    &.swiper-button-disabled{
+                        transition: 300ms;
+                        -webkit-transition: 300ms;
+                        -moz-transition: 300ms;
+                        -ms-transition: 300ms;
+                        -o-transition: 300ms;
+                        opacity: 0;
+                    }
                 }
             }
         }
@@ -1089,22 +1275,34 @@ section{
                 }
             }
             .swiper-button-next , .swiper-button-prev{
-            width: 40PX;
-            height: 40PX;
-            background-color: white;
-            line-height: 50PX;
-            border-radius: 50%;
-            -webkit-border-radius: 50%;
-            -moz-border-radius: 50%;
-            -ms-border-radius: 50%;
-            -o-border-radius: 50%;
-            overflow: hidden;
-            color: var(--wind-chime);
-            border: 3px solid white;
-            &:hover{
-                color: black;
+                width: 40PX;
+                height: 40PX;
+                background-color: white;
+                line-height: 50PX;
+                border-radius: 50%;
+                -webkit-border-radius: 50%;
+                -moz-border-radius: 50%;
+                -ms-border-radius: 50%;
+                -o-border-radius: 50%;
+                overflow: hidden;
+                color: var(--wind-chime);
+                border: 2px solid var(--bg-gry);
+                &::after{
+                    font-size: 15px;
+                    font-weight: 700;
+                }
+                &:hover{
+                    color: black;
+                }
+                &.swiper-button-disabled{
+                    transition: 300ms;
+                    -webkit-transition: 300ms;
+                    -moz-transition: 300ms;
+                    -ms-transition: 300ms;
+                    -o-transition: 300ms;
+                    opacity: 0;
+                }
             }
-        }
     }
 }
     }
@@ -1631,23 +1829,36 @@ section{
               }
           
     
-    .swiper-button-next , .swiper-button-prev{
-        width: 40PX;
-        height: 40PX;
-        background-color: white;
-        line-height: 50PX;
-        border-radius: 50%;
-        -webkit-border-radius: 50%;
-        -moz-border-radius: 50%;
-        -ms-border-radius: 50%;
-        -o-border-radius: 50%;
-        overflow: hidden;
-        color: var(--wind-chime);
-        border: 3px solid white;
-        &:hover{
-            color: black;
-        }
-}}
+              .swiper-button-next , .swiper-button-prev{
+                width: 40PX;
+                height: 40PX;
+                background-color: white;
+                line-height: 50PX;
+                border-radius: 50%;
+                -webkit-border-radius: 50%;
+                -moz-border-radius: 50%;
+                -ms-border-radius: 50%;
+                -o-border-radius: 50%;
+                overflow: hidden;
+                color: var(--wind-chime);
+                border: 2px solid var(--bg-gry);
+                &::after{
+                    font-size: 15px;
+                    font-weight: 700;
+                }
+                &:hover{
+                    color: black;
+                }
+                &.swiper-button-disabled{
+                    transition: 300ms;
+                    -webkit-transition: 300ms;
+                    -moz-transition: 300ms;
+                    -ms-transition: 300ms;
+                    -o-transition: 300ms;
+                    opacity: 0;
+                }
+            }
+}
 }
     }
     /* daghtarin , porfroshtarin mahso akhir end */
